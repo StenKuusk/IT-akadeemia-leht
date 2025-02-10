@@ -1,0 +1,39 @@
+a {
+    color: var(--Valge, #FFF);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    background: var(--Must, #000);
+}
+
+a:hover {
+    color: #20C4F4;
+    background: var(--Must, #000);
+}
+
+.navbar {
+    display: flex;
+    max-width: 1104px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: black;
+
+}
+
+.navbar-links {
+    display: flex;
+    position: relative;
+    gap: 2rem;
+}
+
+.navbar-logo {
+    display: flex;
+    width: 210px;
+    height: 71px;
+    justify-content: center;
+    align-items: center;
+}
