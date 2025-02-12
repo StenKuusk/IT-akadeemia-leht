@@ -3,8 +3,8 @@ import React from 'react';
 const Timetable = () => {
     return (
         <div>
-            <h1>Competitions Page</h1>
-            <p>Welcome to the competitions page. Stay tuned for upcoming events and challenges!</p>
+            <h1>Timetables Page</h1>
+            <p>Welcome to the timetable page. Stay tuned for upcoming updates on lessons and their schedules!</p>
         </div>
     );
 };

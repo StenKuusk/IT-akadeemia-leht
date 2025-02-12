@@ -3,8 +3,8 @@ import React from 'react';
 const Traineeships = () => {
     return (
         <div>
-            <h1>Competitions Page</h1>
-            <p>Welcome to the competitions page. Stay tuned for upcoming events and challenges!</p>
+            <h1>Traineeships Page</h1>
+            <p>Welcome to the traineeships page. Stay tuned for upcoming traineeships you could try partaking in!</p>
         </div>
     );
 };
