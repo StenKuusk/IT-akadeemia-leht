@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -10,6 +9,7 @@ import News from './Pages/News/News';
 import Competitions from './Pages/Competitions/Competitions';
 import Contacts from './Pages/Contacts/Contacts';
 import Navbar  from './Components/Navbar/Navbar';
+import Rooter from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
           <Route path="/competitions" element={<Competitions />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
+        <Rooter />
       </div>
     </Router>
   );
