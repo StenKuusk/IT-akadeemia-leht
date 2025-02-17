@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.erialad-container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters select, .filters button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.erialad-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.eriala-kaart {
+    display: flex;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+}
+
+.eriala-kaart img {
+    width: 150px;
+    height: auto;
+}
+
+.eriala-info {
+    padding: 10px;
+}
+
+.eriala-info h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.eriala-info p {
+    font-size: 14px;
+    color: #555;
+}
+
+.eriala-info span {
+    font-size: 12px;
+    color: #777;
+}

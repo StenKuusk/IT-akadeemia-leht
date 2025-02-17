@@ -9,7 +9,7 @@ import News from './Pages/News/News';
 import Competitions from './Pages/Competitions/Competitions';
 import Contacts from './Pages/Contacts/Contacts';
 import Navbar  from './Components/Navbar/Navbar';
-import Rooter from './Components/Footer/Footer';
+// import Rooter from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path="/competitions" element={<Competitions />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
-        <Rooter />
+        {/*<Rooter />*/}
       </div>
     </Router>
   );
