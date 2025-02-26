@@ -6,29 +6,120 @@ body {
 }
 
 .erialad-container {
-    width: 80%;
     margin: auto;
     background: white;
-    padding: 20px;
     border-radius: 8px;
+    display: flex;
+    max-width: 1440px;
+    padding: 92px 168px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 36px;
+}
+
+.erialad-container h1, .filters, .erialad-list {
+    align-self: stretch;
+}
+
+.erialad-container h1 {
+    width: 355px;
+    height: 32px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
 }
 
 .filters {
     display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    flex-wrap: wrap;
 }
 
 .filters select, .filters button {
+    flex: 1;
+    min-width: 150px;
     padding: 10px;
+    padding-right: 30px; /* Add padding to the right to avoid collision with the arrow */
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--Tume-hall, #8E99AB);
+    background: var(--Valge, #FFF);
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+.filters select:focus, .filters button:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.filters select option {
+    background: var(--Valge, #FFF);
+    color: #000;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.filters select option:hover {
+    background-color: #add8e6; /* Light blue background on hover */
+}
+
+.filters select::-ms-expand {
+    display: none; /* Remove default dropdown arrow in IE */
+}
+
+.filters select {
+    -webkit-appearance: none; /* Remove default dropdown arrow in Safari */
+    -moz-appearance: none; /* Remove default dropdown arrow in Firefox */
+    appearance: none; /* Remove default dropdown arrow in other browsers */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23000" d="M2 5L0 3h4z"/></svg>'); /* Custom dropdown arrow pointing down */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+}
+
+.filters button {
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #F5F7FA;
+    font-weight: 700;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.filters button:hover {
+    background-color: #333; /* Slightly lighter background on hover */
+}
+
+.no-results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffcccc;
+    color: #cc0000;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
 .erialad-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
+    padding: 0 10px;
 }
 
 .eriala-kaart {
@@ -38,7 +129,13 @@ body {
     border-radius: 6px;
     overflow: hidden;
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
+    cursor: pointer; /* Add cursor pointer */
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.eriala-kaart:hover {
+    background-color: #add8e6; /* Light blue background on hover */
 }
 
 .eriala-kaart img {
@@ -48,6 +145,8 @@ body {
 
 .eriala-info {
     padding: 10px;
+    border-top: 8px solid #20C4F4;
+    text-align: left;
 }
 
 .eriala-info h2 {
@@ -63,4 +162,75 @@ body {
 .eriala-info span {
     font-size: 12px;
     color: #777;
+}
+
+.hero-section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    background: var(--Hall, #F5F7FA);
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 500px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+    text-align: center;
+}
+
+.hero-text h2 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.hero-text p {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.hero-text .bold {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.hero-text .regular {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: -15px;
 }
