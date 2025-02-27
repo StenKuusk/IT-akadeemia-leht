@@ -1,19 +1,18 @@
 .footer {
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
   }
   
   .black-section {
     background-color: black;
     color: white;
-    padding: 2rem 0;
+    padding: 1.7rem 0;
   }
   
   .white-section {
     background-color: white;
     color: black;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
   }
   
   .footer-content {
@@ -22,22 +21,26 @@
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
   }
   
   .footer-logo {
     width: 210px;
     height: 71px;
     flex-shrink: 0;
+    margin-left: -150px;
   }
   
   .contact-group {
     text-align: left;
-    margin-right: 20px;
+    margin-right: 10px 20px;
   }
   
   .contact-group h3 {
     margin: 0 0 10px 0;
     font-size: 1rem;
+    color: white;
   }
   
   .contact-group p, 
@@ -46,6 +49,12 @@
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
+    font-weight: normal;
+  }
+
+  .contact-group a:hover {
+    color: #20C4F4; 
+    text-decoration: underline; 
   }
   
   .white-section .footer-content {
@@ -55,15 +64,22 @@
 
   .contact-info {
     text-align: left;
-    margin-left: 350px;
+    margin-left: 10px 20px;
   }
 
   .privacy-info {
     text-align: left;
-    margin-right: 100px;
+    margin-right: 10px 20px;
   }
 
   .voco-info {
     text-align: left;
-    margin-left: 30px;
+    margin-left: 10px 20px;
   }
+
+  .footer-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+}

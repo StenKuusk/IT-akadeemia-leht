@@ -45,6 +45,7 @@ a:hover {
     width: 210px;
     height: 71px;
     flex-shrink: 0;
+    margin-left: 150px;
 }
 
 .dropdown {
