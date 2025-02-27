@@ -22,14 +22,14 @@ const Footer = () => {
                 </div>
                 <div className='contact-group privacy-info'>
                     <h3>Privaatsustingimused</h3>
-                    <p>Andmekaitse</p>
-                    <p>Küpsised</p>
+                    <a href="https://voco.ee/andmekaitse-info/">Andmekaitse</a><br />
+                    <a href="https://voco.ee/kupsised/">Küpsised</a>
                 </div>
             </div>
         </div>
         <div className="white-section">
             <div className="footer-content">
-        <p>&copy; {new Date().getFullYear()} TARTU RAKENDUSLIK KOLLEDŽ </p>
+        <p className="footer-text">&copy; {new Date().getFullYear()} TARTU RAKENDUSLIK KOLLEDŽ </p>
         </div>
       </div>
     </footer>
