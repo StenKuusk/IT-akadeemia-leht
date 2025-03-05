@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Specialty.css';
 
-// Importi pildid
 import itNooremspetsialist from '../../assets/pictures/it_nooremspetsialist.png';
 import itSpetsialist from '../../assets/pictures/it_spetsialist.png';
 import tehnoloogiad from '../../assets/pictures/tehnoloogiad.png';

@@ -1,9 +1,12 @@
 .specialty-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
     font-family: Arial, sans-serif;
-    background: #FFF;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {

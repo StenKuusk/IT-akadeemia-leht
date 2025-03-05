@@ -1,0 +1,27 @@
+.praktika-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 92px;
+    margin-bottom: 92px;
+    margin-left: 168px;
+    margin-right: 168px;
+    height: 1102px;
+    width: 749px;
+}
+
+.praktika-container h1 {
+    color: black;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+}
+
+.praktika-pilt-container {
+    width: 1102px;
+    height: 565px;
+}
