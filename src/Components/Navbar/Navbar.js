@@ -21,7 +21,7 @@ const Navbar = () => {
         <li><Link to="/timetable">Tunniplaan</Link></li>
         <li><Link to="/specialty">Erialad</Link></li>
         <li className="dropdown" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
-          <Link to="/traineeships">Praktika <span className="arrow">&#9662;</span></Link>
+          <span className="nav-item">Praktika <span className="arrow">&#9662;</span></span>
           {dropdownOpen && (
             <ul className="dropdown-menu">
               <li><Link to="/traineeships/info">Praktika üldinfo</Link></li>
