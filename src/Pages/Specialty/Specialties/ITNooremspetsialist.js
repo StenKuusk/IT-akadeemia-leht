@@ -43,9 +43,9 @@ const ITNooremspetsialist = () => {
 
                         <h2>Kuidas toimub õpe?</h2>
                         <p>
-                            Õpe toimub päevaõppes E-N. Kestvus 2 aastat.<br />
-                            Sellel õppekaval õppima asumisel on võimalik saada tasemeõppes osalemise toetust. Rohkem infot tasemeõppes osalemise toetuse kohta leiate Eesti Töötukassa kodulehelt.<br /> <br />
-                            Eriala kirjeldavad märksõnad: IT, loogiline mõtlemine, tehniline taip.
+                            Õpe toimub päevaõppes E-N. Kestvus 2 aastat.<br /><br />
+                            Sellel õppekaval õppima asumisel on võimalik saada tasemeõppes osalemise toetust. Rohkem infot tasemeõppes osalemise toetuse kohta leiate Eesti Töötukassa kodulehelt.<br /><br />
+                            Eriala kirjeldavad märksõnad: IT, loogiline mõtlemine, tehniline taip.
                         </p>
                     </div>
 
@@ -58,10 +58,10 @@ const ITNooremspetsialist = () => {
                             {activeAccordion === 0 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Õppima asumise eelduseks on keskharidus.<br />
-                                        • Grupivestlus (hindame suhtlemisoskust, meeskonnatööoskust, eriala teadlikku valikut).<br />
-                                        • Praktiline ülesanne – enne vastuvõtu katseid tuleb läbida konkreetne Codecademy kursus: (Siin). Kursus on tasuline, kuid seitsme päeva jooksul on võimalik kursust tasuta läbida.<br />
-                                        • Motivatsioonikiri – palume motivatsioonikirja lõppu lisada Codecademy kasutajanimi. Motivatsioonikirjas palume selgitada varasemaid IT ja tehnoloogiaalaseid kokkupuuteid ning millisena näed oma edasist karjääri IT-valdkonnas. Kui sa omad varasemat töö- või õpikogemust, siis ka seda, mida võiks õpitav IT-süsteemide nooremspetsialisti eriala õpe sellele juurde anda või seostuda.
+                                        • Õppima asumise eelduseks on keskharidus.<br />
+                                        • Grupivestlus (hindame suhtlemisoskust, meeskonnatööoskust, eriala teadlikku valikut).<br />
+                                        • Praktiline ülesanne – enne vastuvõtu katseid tuleb läbida konkreetne Codecademy kursus: (Siin). Kursus on tasuline, kuid seitsme päeva jooksul on võimalik kursust tasuta läbida.<br />
+                                        • Motivatsioonikiri – palume motivatsioonikirja lõppu lisada Codecademy kasutajanimi. Motivatsioonikirjas palume selgitada varasemaid IT ja tehnoloogiaalaseid kokkupuuteid ning millisena näed oma edasist karjääri IT-valdkonnas. Kui sa omad varasemat töö- või õpikogemust, siis ka seda, mida võiks õpitav IT-süsteemide nooremspetsialisti eriala õpe sellele juurde anda või seostuda.
                                     </p>
                                 </div>
                             )}
@@ -74,7 +74,17 @@ const ITNooremspetsialist = () => {
                             {activeAccordion === 1 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Omandatavad oskused: arvutivõrkude haldamine, IT-süsteemide arendamine, probleemide lahendamine.
+                                        Tartu Rakendusliku Kolledži lõpetanud IT-süsteemide nooremspetsialist:<br />
+                                        • teab, kuidas hoida töökorras organisatsiooni infotehnoloogilist taristut;<br />
+                                        • tunneb IT-süsteemide riistvara;<br />
+                                        • mõistab arvutivõrgu aluseid ja oskab rakendada võrguseadmeid;<br />
+                                        • haldab arvutivõrke ja võrguteenuseid;<br />
+                                        • haldab majutuskeskkonna riistvara ja klientseadmeid;<br />
+                                        • haldab Windows ja Linux/BSD-operatsioonisüsteeme;<br />
+                                        • tunneb skriptimisvahendeid ning automatiseerib võimalusel haldustegevusi;<br />
+                                        • toimetab pilveteenuste haldusega;<br />
+                                        • pakub kliendituge ja muudatuste tuge;<br />
+                                        • sooritab õpingute lõpus IT-süsteemide nooremspetsialisti 4. taseme kutseeksami.
                                     </p>
                                 </div>
                             )}
@@ -87,7 +97,12 @@ const ITNooremspetsialist = () => {
                             {activeAccordion === 2 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Praktikavõimalused: koostöö erinevate IT-ettevõtetega, praktiline töö reaalsetes projektides.
+                                        Tartu Rakendusliku Kolledži IT-süsteemide nooremspetsialisti eriala praktika sooritatakse organisatsioonides ja ettevõtetes, kus on kasutusel erinevaid IT-süsteeme ja kasutajaliideseid. Õppija, kes juba töötab ettevõttes, saab oma teoreetilisi teadmisi kohe praktikas rakendada.<br />
+                                        Praktika maht on esimesel kursusel 10 nädalat ja teisel kursusel 15 nädalat.<br />
+                                        Hea teada!<br />
+                                        • Praktikakohast kujuneb sageli tänu uutele oskustele ka uute karjäärivõimalustega kindel töökoht.<br />
+                                        • Tartu Rakenduslikus Kolledžis toimub õppetöö ja praktika kaasaegsetes õppeklassides ja -laborites.<br />
+                                        • Tartu Rakenduslik Kolledž toetab õpilaste osalemist kutsevõistlustel. Edukas osalemine kutsevõistlustel loob kasulikke kontakte tööandjatega!
                                     </p>
                                 </div>
                             )}
@@ -100,7 +115,18 @@ const ITNooremspetsialist = () => {
                             {activeAccordion === 3 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Eelised tööturul: suur nõudlus IT-spetsialistide järele, konkurentsivõimeline palk, võimalus töötada rahvusvahelistes ettevõtetes.
+                                        Tartu Rakendusliku Kolledži IT-süsteemide nooremspetsialisti eriala lõpetajat ootab:<br />
+                                        • Kindel töö, hea palk ja valikuvõimalused spetsialiseerumiseks väga erinevates valdkondades:<br />
+                                        ◦ arvutitehnikuna,<br />
+                                        ◦ klienditoetehnikuna (help desk),<br />
+                                        ◦ kasutajatoe spetsialistina,<br />
+                                        ◦ võrgutehnikuna,<br />
+                                        ◦ võrguadministraatorina.<br />
+                                        • Kutsetunnistus kehtivusega Eestis ja teistes Euroopa riikides.<br />
+                                        • Karjäärivõimalused:<br />
+                                        ◦ Nutikad IT-süsteemide nooremspetsialistid saavutavad pideva enesetäiendamise ja töökogemuse käigus peagi tähelepanuväärseid töötulemusi ja liiguvad karjääriredelil edasi.<br />
+                                        ◦ Sõltumatuse eelistajad saavad end teostada IT-ettevõtjatena.<br />
+                                        ◦ Kuigi töö leiab tegijad üles sageli juba koolipingis, tasub jätkata õpinguid pidevalt arenevas valdkonnas.
                                     </p>
                                 </div>
                             )}
@@ -113,7 +139,16 @@ const ITNooremspetsialist = () => {
                             {activeAccordion === 4 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Õpi edasi: võimalus jätkata õpinguid kõrgkoolis IT-valdkonna erialadel.
+                                        Edasiõppimise võimalusi pakuvad:<br />
+                                        • Kutsehariduse tasemel:<br />
+                                        ◦ Tartu Rakenduslik Kolledž, Süsteemiadministraator<br />
+                                        • Kõrghariduse tasemel:<br />
+                                        ◦ Informaatika, IT-süsteemide arendus või äriinfotehnoloogia<br />
+                                        ◦ Tartu Ülikool.<br />
+                                        ◦ Informaatika ja Arvutitehnika erialad<br />
+                                        ◦ Tallinna Ülikoolis<br />
+                                        ◦ Informaatika eriala<br />
+                                        ◦ Eesti Lennuakadeemia
                                     </p>
                                 </div>
                             )}
@@ -124,9 +159,8 @@ const ITNooremspetsialist = () => {
                 <div className="side-content">
                     <div className="materials">
                         <h3>Vajalikud materjalid</h3>
-                        <button>Õppekava PDF</button>
-                        <button>Rakenduskava PDF</button>
-                        <button>Praktika info</button>
+                        <a href="https://siseveeb.voco.ee/veebivormid/oppekavad/oppekava_pdf?oppekava=584&_gl=1*1wuuria*_ga*MTU0MzI5Nzk3Ny4xNzI4NTQyNTQw*_ga_SVBCWCMRJK*MTc0MTIwMjMwMi4yNy4xLjE3NDEyMDUwNTEuMC4wLjA.*_ga_C6W71SBM6T*MTc0MTIwMjMwMy4yNy4xLjE3NDEyMDUwNTEuNTguMC4w" target="_blank" rel="noopener noreferrer">Õppekava PDF</a>
+                        <a href="https://siseveeb.voco.ee/veebivormid/oppekavad/oppekava_pdf?oppekava=584&rakenduskavad=jah&oppegrupp=uldine&_gl=1*1wuuria*_ga*MTU0MzI5Nzk3Ny4xNzI4NTQyNTQw*_ga_SVBCWCMRJK*MTc0MTIwMjMwMi4yNy4xLjE3NDEyMDUwNTEuMC4wLjA.*_ga_C6W71SBM6T*MTc0MTIwMjMwMy4yNy4xLjE3NDEyMDUwNTEuNTguMC4w" target="_blank" rel="noopener noreferrer">Rakenduskava PDF</a>
                     </div>
 
                     <div className="contact">

@@ -63,7 +63,7 @@ const specialties = [
         img: noorem_tarkvaraarendaja,
         title: "Noorem tarkvaraarendaja",
         description: "Koodikirjutamine on tänapäeva digitaalne kirjaoskus. Hästi toimiv koduleht, äpp või mõni muu vajalik rakendus on parim visiitkaart igale ettevõtmisele. Noorem-tarkvaraarendaja põhitöö ongi tarkvara lähtekood...",
-        details: "IT kool | keskhariduse baasil | sessioonõpe | 2 aastat ja 6 kuud",
+        details: "IT kool | keskhariduse baasil | sessioonõpe | 2 aastat",
         filters: {
             education: "Keskhariduse baasil",
             level: "Esmaõppe õppekava, EKR5",

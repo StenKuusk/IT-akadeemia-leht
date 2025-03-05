@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Specialties.css';
-import UX_UI_nooremspetsialist from '../../../assets/pictures/UX_UI_nooremspetsialist.png';
+import UX_UI_nooremspetsialist from '../../../assets/pictures/UX_UI_nooremspetsialist_highres.jpg';
 import step1Image from '../../../assets/logos/step1.png';
 import step2Image from '../../../assets/logos/step2.png';
 import step3Image from '../../../assets/logos/step3.png';
@@ -34,7 +34,18 @@ const UXUINooremspetsialist = () => {
                         <h1>UX/UI disaini nooremspetsialist</h1>
                         <h3>IT kool | keskhariduse baasil | koolipõhine | 1 aasta ja 6 kuud</h3>
                         <p>
-                            UX (kasutajakogemuse) disain keskendub positiivsete emotsioonide tekitamisele ning sellele, kuidas kasutajad navigeerivad kõigi erinevate UI-elementide vahel. UI (kasutajaliidese) disain viitab aga sellele, kuidas kasutajaliides välja näeb ja kuidas see toimib.
+                            UX (kasutajakogemuse) disain keskendub positiivsete emotsioonide tekitamisele ning sellele, kuidas kasutajad navigeerivad kõigi erinevate UI-elementide vahel. UI (kasutajaliidese) disain viitab aga sellele, mida kasutajad tegelikult rakenduse ekraanil näevad – tekst, värvid, taustad, ikoonid ja liikuvad elemendid. UX/UI disaini nooremspetsialist loob kasutajaliideseid, mis on kasutajakesksed, esteetilised ja funktsionaalsed. Ta mõistab, kuidas kasutajad erinevates olukordades käituvad ja kuidas neid aidata, et nad saaksid soovitud tulemusi saavutada. Ta oskab kasutada erinevaid disainitööriistu ja -meetodeid, et luua kasutajaliideseid, mis on lihtsad ja intuitiivsed. Ta on hea meeskonnaliige, kes suudab koostöös teiste spetsialistidega luua terviklikke ja kasutajakeskseid lahendusi.
+                        </p>
+                        <h2>Kellele?</h2>
+                        <p>
+                            UX/UI-disaineritel on erinevad tööülesanded, mille käigus peavad nad näiteks planeerima, kaardistama kasutajateekonda, kujundama ekraane, viima läbi uuringud jne. See eeldab head suhtlemisoskust, tähelepanu ja keskendumisvõimet. UX/UI teadmisi ja oskusi saab rakendada väga erinevates valdkondades ning nõudmine tööturul selliste spetsialistide järele on suur.<br /><br />
+                            Tartu Rakenduslik Kolledž on IT-valdkonnas tunnustatud kogemustega õppeasutus. Moodsa riist- ja tarkvaraga varustatud arvutiklassides ning laborites õpetavad spetsialistidest oma ala tipud. Kuna kasutajakogemuse disaini valdkond eeldab erinevate valdkondade head tundmist, siis tehakse koostööd Tartu Kunstikooliga ja kaasatakse praktikuid töömaailmast.<br /><br />
+                            Hea kasutajakogemuse ja kasutajaliidese disainer on süsteemne, hea suhtleja ning vajadusel ka läbirääkija, süstemaatiline, analüütiline ning suure empaatiavõimega, et kasutajakogemust esiplaanile seada. Ta on innustunud ja alati valmis juurde õppima, sest valdkond areneb väga kiiresti.
+                        </p>
+                        <h2>Kuidas toimub õpe?</h2>
+                        <p>
+                            Põhiõpingutest moodustab praktika 23 EKAPit.<br />
+                            Eriala kirjeldavad märksõnad: UI/UX, kasutaja sõbralikkus, koodid.
                         </p>
                     </div>
 
@@ -47,10 +58,9 @@ const UXUINooremspetsialist = () => {
                             {activeAccordion === 0 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Õppima asumise eelduseks on keskharidus.<br />
-                                        • Grupivestlus (hindame suhtlemisoskust, meeskonnatööoskust, eriala teadlikku valikut).<br />
-                                        • Praktiline ülesanne – enne vastuvõtu katseid tuleb läbida konkreetne Codecademy kursus: (Siin). Kursus on tasuline, kuid seitsme päeva jooksul on võimalik kursust tasuta läbida.<br />
-                                        • Motivatsioonikiri – palume motivatsioonikirja lõppu lisada Codecademy kasutajanimi. Motivatsioonikirjas palume selgitada varasemaid IT ja tehnoloogiaalaseid kokkupuuteid ning millisena näed oma edasist karjääri IT-valdkonnas. Kui sa omad varasemat töö- või õpikogemust, siis ka seda, mida võiks õpitav UX/UI disaini nooremspetsialisti eriala õpe sellele juurde anda või seostuda.
+                                        • Läbida e-kursus: Codecademy introduction to UI and UX Design (<a href="https://www.codecademy.com/learn/paths/ui-and-ux-design" target="_blank" rel="noopener noreferrer">SIIN</a>). Selle põhjal tuleb praktiline ülesanne.<br />
+                                        • E-portfoolio link (portfooliosse sobivad tehtud joonistused, skitseeringud, veebileht)<br />
+                                        • Vestlus: inglise keeles (osaliselt)
                                     </p>
                                 </div>
                             )}
@@ -63,7 +73,14 @@ const UXUINooremspetsialist = () => {
                             {activeAccordion === 1 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Omandatavad oskused: kasutajaliideste disainimine, kasutajakogemuse analüüs, prototüüpide loomine.
+                                        Pärast õpingute lõpetamist õppija:<br />
+                                        • kasutab omandatava kutse tasemel kokkulepitud erialast oskussõnavara, põhimõtteid, tehnoloogiaid, protsesse, töövahendeid ja seadmeid;<br />
+                                        • tunneb suhtlemise ja psühholoogia aluseid ning seostab neid UX/UI disaini nooremspetsialisti tööga;<br />
+                                        • järgib protseduurireegleid ja parimaid praktikaid ning täidab UX/UI disaini nooremspetsialisti tööülesandeid;<br />
+                                        • tunneb UX/UI testimise võimalusi ning vahendeid;<br />
+                                        • kasutab kasutajaliidese loomisel ja testimisel tarkvaraarendus- ja kujundusvahendeid;<br />
+                                        • töötab tarkvaraarenduse meeskonna liikmena;<br />
+                                        • dokumenteerib enda ja teiste meeskonnaliikmete tööd.
                                     </p>
                                 </div>
                             )}
@@ -76,7 +93,14 @@ const UXUINooremspetsialist = () => {
                             {activeAccordion === 2 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Praktikavõimalused: koostöö erinevate disaini- ja IT-ettevõtetega, praktiline töö reaalsetes projektides.
+                                        Erinevates omandivormides olevad ettevõtted ja organisatsioonid, kus õppijal on võimalik juhendaja juhendamisel täita praktikajuhendis toodud praktikaülesandeid.<br /><br />
+                                        Praktikaülesanded:<br /><br />
+                                        • Õppija seostab kasutaja käitumismustreid psühholoogiaga (sh sihtrühmade erinevused)<br />
+                                        • tunneb kasutajakogemuse analüüsi põhimõtteid<br />
+                                        • rakendab kasutajaliidese disaini põhimõtteid oma töös<br />
+                                        • kasutab struktureeritud, optimeeritud CSS koodi ja semantilist HTML koodi lähtudes W3C standardist ja kokkulepitud koodistandardist<br />
+                                        • rakendab ajakohaseid veebitehnoloogiaid oma töös<br />
+                                        • teostab kliendiprojekti lähtudes kliendi vajadustest, standarditest ja agiilse arenduse põhimõtetest.
                                     </p>
                                 </div>
                             )}
@@ -89,7 +113,7 @@ const UXUINooremspetsialist = () => {
                             {activeAccordion === 3 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Eelised tööturul: suur nõudlus UX/UI disainerite järele, konkurentsivõimeline palk, võimalus töötada rahvusvahelistes ettevõtetes.
+                                        Suur nõudlus UX/UI disainerite järele, konkurentsivõimeline palk, võimalus töötada rahvusvahelistes ettevõtetes.
                                     </p>
                                 </div>
                             )}
@@ -102,7 +126,7 @@ const UXUINooremspetsialist = () => {
                             {activeAccordion === 4 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Õpi edasi: võimalus jätkata õpinguid kõrgkoolis disaini ja IT-valdkonna erialadel.
+                                        Võimalus jätkata õpinguid kõrgkoolis disaini ja IT-valdkonna erialadel.
                                     </p>
                                 </div>
                             )}
@@ -113,9 +137,8 @@ const UXUINooremspetsialist = () => {
                 <div className="side-content">
                     <div className="materials">
                         <h3>Vajalikud materjalid</h3>
-                        <button>Õppekava PDF</button>
-                        <button>Rakenduskava PDF</button>
-                        <button>Praktika info</button>
+                        <a href="https://siseveeb.voco.ee/veebivormid/oppekavad/oppekava_pdf?oppekava=584&_gl=1*17m1yfm*_ga*MTU0MzI5Nzk3Ny4xNzI4NTQyNTQw*_ga_SVBCWCMRJK*MTc0MTIwMjMwMi4yNy4xLjE3NDEyMDM1MDguMC4wLjA.*_ga_C6W71SBM6T*MTc0MTIwMjMwMy4yNy4xLjE3NDEyMDM1MDguNjAuMC4w" target="_blank" rel="noopener noreferrer">Õppekava PDF</a>
+                        <a href="https://siseveeb.voco.ee/veebivormid/oppekavad/oppekava_pdf?oppekava=584&rakenduskavad=jah&oppegrupp=uldine&_gl=1*9ft41v*_ga*MTU0MzI5Nzk3Ny4xNzI4NTQyNTQw*_ga_SVBCWCMRJK*MTc0MTIwMjMwMi4yNy4xLjE3NDEyMDM1MDguMC4wLjA.*_ga_C6W71SBM6T*MTc0MTIwMjMwMy4yNy4xLjE3NDEyMDM1MDguNjAuMC4w" target="_blank" rel="noopener noreferrer">Rakenduskava PDF</a>
                     </div>
 
                     <div className="contact">

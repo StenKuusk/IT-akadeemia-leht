@@ -103,7 +103,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-.materials button {
+.materials a {
     background-color: black;
     color: white;
     border: none;
@@ -115,7 +115,7 @@ h3 {
     margin-bottom: 10px;
 }
 
-.materials button:hover {
+.materials a:hover {
     background-color: #333;
 }
 
@@ -257,21 +257,17 @@ h3 {
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
-    gap: 15px;
+    margin: 0 50px; /* Add margin to ensure images are not at the edge */
 }
 
 .step {
     display: flex;
-    width: 200px; /* Adjusted width */
-    height: 200px; /* Adjusted height */
+    width: 261px;
+    height: 263px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-size: cover; /* Ensure the background image covers the entire step */
-    background-position: center; /* Center the background image */
-    color: white; /* Ensure the text is readable over the background image */
-    text-shadow: 1px 1px 2px black; /* Add a slight shadow to the text for better readability */
 }
 
 .learn-more {
@@ -291,15 +287,17 @@ h3 {
     font-weight: 700;
     line-height: 140%;
     margin: 0 auto; /* Center the button */
+    cursor: pointer; /* Add cursor pointer */
 }
 
 .learn-more:hover {
     background: #1f1e1e;
+    cursor: pointer; /* Ensure cursor pointer on hover */
 }
 
 .banner {
     display: flex;
-    height: 300px; /* Adjusted height */
+    height: 600px; /* Adjusted height */
 }
 
 .banner-image {
@@ -323,7 +321,7 @@ h3 {
 .banner-box p {
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 10px; /* Add some margin to the bottom */
 }

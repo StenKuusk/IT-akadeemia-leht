@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Specialties.css';
-import tehnoloogiad from '../../../assets/pictures/tehnoloogiad.png';
+import tehnoloogiad from '../../../assets/pictures/tehnoloogiad_highres.jpg';
 import step1Image from '../../../assets/logos/step1.png';
 import step2Image from '../../../assets/logos/step2.png';
 import step3Image from '../../../assets/logos/step3.png';
@@ -34,17 +34,12 @@ const KestlikudTehnoloogiad = () => {
                         <h1>Kestlikud tehnoloogiad</h1>
                         <h3>IT kool | põhihariduse baasil | koolipõhine | 4 aastat</h3>
                         <p>
-                            Õppetöö toimub nii VOCO-s kui ka Tartu Kunstikoolis. Võrdselt on väärtustatud nii teadmised kui oskused. Lahendad väljakutseid tiimides. Uued metoodikad, nagu disainmõtlemine ja tiimicoachimine. Sinu isiklik areng on meie prioriteet.
-                        </p>
-                        <h2>Kellele?</h2>
-                        <p>
-                            IT-valdkonna kiire areng ja uued suunad eeldavad, et tunned teema vastu huvi ja oled valmis pidevalt täiendama oma oskusi.
-                        </p>
-
-                        <h2>Kuidas toimub õpe?</h2>
-                        <p>
-                            Õpe toimub päevases õppes ja kestab 4 aastat.<br />
-                            Sellel õppekaval on võimalik osa aineid läbida tasemeõppes osalejate poolt.
+                            • Õppetöö toimub nii VOCO-s kui ka Tartu Kunstikoolis.<br />
+                            • Võrdselt on väärtustatud nii teadmised kui oskused.<br />
+                            • Lahendad väljakutseid tiimides.<br />
+                            • Uued metoodikad, nagu disainmõtlemine ja tiimicoachimine.<br />
+                            • Sinu isiklik areng on toetatud.<br />
+                            • Saad ise õppekava raames valikuid teha.
                         </p>
                     </div>
 
@@ -57,10 +52,7 @@ const KestlikudTehnoloogiad = () => {
                             {activeAccordion === 0 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Õppima asumise eelduseks on põhiharidus.<br />
-                                        • Grupivestlus (hindame suhtlemisoskust, meeskonnatööoskust, eriala teadlikku valikut).<br />
-                                        • Praktiline ülesanne – enne vastuvõtu katseid tuleb läbida konkreetne Codecademy kursus: (Siin). Kursus on tasuline, kuid seitsme päeva jooksul on võimalik kursust tasuta läbida.<br />
-                                        • Motivatsioonikiri – palume motivatsioonikirja lõppu lisada Codecademy kasutajanimi. Motivatsioonikirjas palume selgitada varasemaid IT ja tehnoloogiaalaseid kokkupuuteid ning millisena näed oma edasist karjääri IT-valdkonnas. Kui sa omad varasemat töö- või õpikogemust, siis ka seda, mida võiks õpitav kestlike tehnoloogiate eriala õpe sellele juurde anda või seostuda.
+                                        Sisseastumiskatseteks on tegevuspäev ja vestlus.
                                     </p>
                                 </div>
                             )}
@@ -73,7 +65,13 @@ const KestlikudTehnoloogiad = () => {
                             {activeAccordion === 1 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Omandatavad oskused: kestlike tehnoloogiate arendamine, probleemide lahendamine, meeskonnatöö.
+                                        Kestlikke tehnoloogiaid õppides saad:<br />
+                                        • Tugeva keskhariduse<br />
+                                        • Teadmised ja oskused valitud suunal<br />
+                                        • Osa disainmõtlemisest ja koostööprojektidest<br />
+                                        • Paremaks tulevikuks vajalikud roheoskused<br />
+                                        • Julguse, ambitsiooni ja tutvused kogu eluks<br />
+                                        • Õppimise ajal puutud kokku õpetajate ja mentoritega, kellel on silmapaistev kogemustepagas ning kellest saavad Sinu unistuste tuleviku rajamise koostööpartnerid. Tuleviku tehnoloogiate õppekaval omandatu annab Sulle tugeva põhja suurteks tegudeks.
                                     </p>
                                 </div>
                             )}
@@ -86,7 +84,11 @@ const KestlikudTehnoloogiad = () => {
                             {activeAccordion === 2 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Praktikavõimalused: koostöö erinevate ettevõtetega, praktiline töö reaalsetes projektides.
+                                        Vastavalt suunale:<br />
+                                        • NUTIKAD SEADMED: Teerajajad nutikas maailmas – seadmed, masinad ja robotid!<br />
+                                        • MATERJALIRINGLUS: Tunned erinevate materjalide päritolu, omadusi, eluea parandamise ja taaskasutamise võimalusi.<br />
+                                        • MULTIMEEDIA: Kõneled visuaalses keeles, kasutades nii kätt kui ka digipliiatsit.<br />
+                                        • DIGITEHNOLOOGIA: Digitehnoloogia aitab võtta kasutusele asjade interneti, tehisaru võimalused ning hallata andmeid. Samuti annab see võimaluse andmete põhjal teha prognoose.
                                     </p>
                                 </div>
                             )}
@@ -99,7 +101,8 @@ const KestlikudTehnoloogiad = () => {
                             {activeAccordion === 3 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Eelised tööturul: suur nõudlus kestlike tehnoloogiate spetsialistide järele, konkurentsivõimeline palk, võimalus töötada rahvusvahelistes ettevõtetes.
+                                        Minna tööle: tööstus 5.0, IT sektor, disain ja loomemajandus, inseneeria, vt siit https://industry40.ee/<br />
+                                        Tuleviku tööturg: valdkonnad tekstiilitööstus, pakenditööstus, toiduainete töötlus, jäätmekäitlus, IT-sektor, disaini- ja loomemajandussektor.
                                     </p>
                                 </div>
                             )}
@@ -112,7 +115,8 @@ const KestlikudTehnoloogiad = () => {
                             {activeAccordion === 4 && (
                                 <div className="accordion-content">
                                     <p>
-                                        • Õpi edasi: võimalus jätkata õpinguid kõrgkoolis IT-valdkonna erialadel.
+                                        Edasi õppida kõrghariduses:<br />
+                                        inseneeria, materjalitehnoloogia, tootearenduse, disaini, informaatika jm valdkonnad.
                                     </p>
                                 </div>
                             )}
@@ -123,9 +127,8 @@ const KestlikudTehnoloogiad = () => {
                 <div className="side-content">
                     <div className="materials">
                         <h3>Vajalikud materjalid</h3>
-                        <button>Õppekava PDF</button>
-                        <button>Rakenduskava PDF</button>
-                        <button>Praktika info</button>
+                        <a href="https://siseveeb.voco.ee/veebivormid/oppekavad/oppekava_pdf?oppekava=736&_gl=1*1rfozva*_ga*MTU0MzI5Nzk3Ny4xNzI4NTQyNTQw*_ga_SVBCWCMRJK*MTc0MTIwMjMwMi4yNy4xLjE3NDEyMDQ4MTMuMC4wLjA.*_ga_C6W71SBM6T*MTc0MTIwMjMwMy4yNy4xLjE3NDEyMDQ4MTMuNTguMC4w" target="_blank" rel="noopener noreferrer">Õppekava PDF</a>
+                        <a href="https://siseveeb.voco.ee/veebivormid/oppekavad/oppekava_pdf?oppekava=736&rakenduskavad=jah&oppegrupp=uldine&_gl=1*1rfozva*_ga*MTU0MzI5Nzk3Ny4xNzI4NTQyNTQw*_ga_SVBCWCMRJK*MTc0MTIwMjMwMi4yNy4xLjE3NDEyMDQ4MTMuMC4wLjA.*_ga_C6W71SBM6T*MTc0MTIwMjMwMy4yNy4xLjE3NDEyMDQ4MTMuNTguMC4w" target="_blank" rel="noopener noreferrer">Rakenduskava PDF</a>
                     </div>
 
                     <div className="contact">
