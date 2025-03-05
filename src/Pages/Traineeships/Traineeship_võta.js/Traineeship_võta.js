@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Traineeships = () => {
+const TraineeshipsVõta = () => {
     return (
         <div>
             <h1>Traineeships Page</h1>
@@ -9,4 +9,4 @@ const Traineeships = () => {
     );
 };
 
-export default Traineeships;
+export default TraineeshipsVõta;

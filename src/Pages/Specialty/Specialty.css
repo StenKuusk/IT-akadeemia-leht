@@ -10,7 +10,8 @@ body {
     background: white;
     border-radius: 8px;
     display: flex;
-    max-width: 1440px;
+    max-width: 1540px;
+    width: 100%;
     padding: 92px 168px;
     flex-direction: column;
     align-items: stretch;
@@ -45,7 +46,7 @@ body {
     flex: 1;
     min-width: 150px;
     padding: 10px;
-    padding-right: 30px; /* Add padding to the right to avoid collision with the arrow */
+    padding-right: 30px; 
     border-radius: 4px;
     border: 1px solid var(--Tume-hall, #8E99AB);
     background: var(--Valge, #FFF);
@@ -56,10 +57,10 @@ body {
     font-weight: 400;
     line-height: 140%;
     text-align: center;
-    white-space: nowrap; /* Prevent text wrapping */
-    overflow: hidden; /* Hide overflow text */
-    text-overflow: ellipsis; /* Add ellipsis for overflow text */
-    transition: all 0.3s ease; /* Add transition for smooth animation */
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    transition: all 0.3s ease; 
 }
 
 .filters select:focus, .filters button:focus {
@@ -70,21 +71,21 @@ body {
 .filters select option {
     background: var(--Valge, #FFF);
     color: #000;
-    transition: background-color 0.3s ease; /* Add transition for hover effect */
+    transition: background-color 0.3s ease; 
 }
 
 .filters select option:hover {
-    background-color: #add8e6; /* Light blue background on hover */
+    background-color: #add8e6; 
 }
 
 .filters select::-ms-expand {
-    display: none; /* Remove default dropdown arrow in IE */
+    display: none; 
 }
 
 .filters select {
-    -webkit-appearance: none; /* Remove default dropdown arrow in Safari */
-    -moz-appearance: none; /* Remove default dropdown arrow in Firefox */
-    appearance: none; /* Remove default dropdown arrow in other browsers */
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
     background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23000" d="M2 5L0 3h4z"/></svg>'); /* Custom dropdown arrow pointing down */
     background-repeat: no-repeat;
     background-position: right 10px center;
@@ -97,11 +98,11 @@ body {
     background: #000;
     color: #F5F7FA;
     font-weight: 700;
-    transition: background-color 0.3s ease; /* Add transition for hover effect */
+    transition: background-color 0.3s ease; 
 }
 
 .filters button:hover {
-    background-color: #333; /* Slightly lighter background on hover */
+    background-color: #333; 
 }
 
 .no-results {
@@ -130,12 +131,12 @@ body {
     overflow: hidden;
     width: 100%;
     max-width: 100%;
-    cursor: pointer; /* Add cursor pointer */
-    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .eriala-kaart:hover {
-    background-color: #add8e6; /* Light blue background on hover */
+    background-color: #add8e6; 
 }
 
 .eriala-kaart img {
@@ -165,12 +166,12 @@ body {
 }
 
 .hero-section {
-    width: 100vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
     background: var(--Hall, #F5F7FA);
     overflow: hidden;

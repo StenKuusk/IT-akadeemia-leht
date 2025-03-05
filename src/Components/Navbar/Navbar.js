@@ -24,10 +24,10 @@ const Navbar = () => {
           <Link to="/traineeships">Praktika <span className="arrow">&#9662;</span></Link>
           {dropdownOpen && (
             <ul className="dropdown-menu">
-              <li><Link to="/traineeships/internships">Praktika üldinfo</Link></li>
-              <li><Link to="/traineeships/externships">Praktika välismaal</Link></li>
-              <li><Link to="/traineeships/internships">Praktika VÕTA-ga</Link></li>
-              <li><Link to="/traineeships/externships">Praktikapakkumised</Link></li>
+              <li><Link to="/traineeships/info">Praktika üldinfo</Link></li>
+              <li><Link to="/traineeships/worldwide">Praktika välismaal</Link></li>
+              <li><Link to="/traineeships/võta">Praktika VÕTA-ga</Link></li>
+              <li><Link to="/traineeships/offers">Praktikapakkumised</Link></li>
             </ul>
           )}
         </li>
