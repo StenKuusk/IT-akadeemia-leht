@@ -1,0 +1,126 @@
+.traineeshipsworldwide-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+    margin: 92px auto;
+    max-width: 829px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.traineeshipsworldwide-container h1 {
+    color: black;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+    width: 100%;
+}
+
+.traineeshipsworldwide-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.traineeshipsworldwide-text-container p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left; 
+}
+
+.traineeshipsworldwide-text-container h2,
+.traineeshipsworldwide-button-container h2 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left; 
+}
+
+.traineeshipsworldwide-text-container a {
+    text-decoration: underline;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.traineeshipsworldwide-text-container a:hover {
+    color: grey; 
+    text-decoration: none;
+    background: none; 
+}
+
+.traineeshipsworldwide-container a {
+    background: transparent;
+}
+
+.traineeshipsworldwide-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.traineeshipsworldwide-button,
+.traineeshipsworldwide-button2 {
+    display: flex;
+    min-width: 136px;
+    min-height: 47px;
+    padding: 10px;
+    justify-content: center;
+    margin-left: -10px;
+    align-items: center;
+}
+
+.traineeshipsworldwide-button button,
+.traineeshipsworldwide-button2 button {
+    border-radius: 2px;
+    background: #000;
+    color: #F5F7FA;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    border: none;
+    padding: 10px 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.traineeshipsworldwide-button button:hover,
+.traineeshipsworldwide-button2 button:hover {
+    background: #333; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.traineeshipsworldwide-button a,
+.traineeshipsworldwide-button2 a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.traineeshipsworldwide-button a:hover,
+.traineeshipsworldwide-button2 a:hover {
+    text-decoration: none;
+    background: transparent;
+}

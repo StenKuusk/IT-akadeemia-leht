@@ -6,7 +6,7 @@
   .black-section {
     background-color: black;
     color: white;
-    padding: 1.7rem 0;
+    padding: 1.3rem 0;
   }
   
   .white-section {
@@ -16,40 +16,103 @@
   }
   
   .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
     display: flex;
+    max-width: 1128px;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
+    row-gap: 20px;
+    flex: 1 0 0;
     flex-wrap: wrap;
+    padding: 0 20px;
   }
   
   .footer-logo {
+    display: flex;
     width: 210px;
     height: 71px;
-    flex-shrink: 0;
-    margin-left: -150px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footer-info {
+    display: flex;
+    min-width: 270px;
+    max-width: 530px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 30px 36px;
+    flex: 1 0 0;
+    flex-wrap: wrap;
   }
   
-  .contact-group {
+  .contact-info,
+  .voco-info,
+  .privacy-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+  }
+
+  .contact-info {
+    width: 109px;
+  }
+
+  .voco-info {
+    width: 139px;
+  }
+
+  .privacy-info {
+    width: 207px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info h3,
+  .voco-info h3,
+  .privacy-info h3 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
     text-align: left;
-    margin-right: 10px 20px;
+    margin: 0 0 5px 0;
   }
   
-  .contact-group h3 {
-    margin: 0 0 10px 0;
-    font-size: 1rem;
-    color: white;
+  .contact-info p,
+  .contact-info a,
+  .voco-info p,
+  .voco-info a {
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+      margin: 0;
+      text-decoration: none;
   }
-  
-  .contact-group p, 
-  .contact-group a {
-    margin: 5px 0;
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: normal;
+
+  .privacy-info p,
+  .privacy-info a {
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+      margin: 0;
+      text-decoration: none;
+      display: block;
+      margin-bottom: -10px;
   }
 
   .contact-group a:hover {
@@ -62,24 +125,12 @@
     text-align: center;
   }
 
-  .contact-info {
-    text-align: left;
-    margin-left: 10px 20px;
-  }
-
-  .privacy-info {
-    text-align: left;
-    margin-right: 10px 20px;
-  }
-
-  .voco-info {
-    text-align: left;
-    margin-left: 10px 20px;
-  }
-
   .footer-text {
+    color: var(--Must, #000);
+    text-align: center;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
+    line-height: 140%;
 }
