@@ -1,0 +1,247 @@
+.contact-section {
+    display: flex;
+    max-width: 100%;
+    padding: var(--Spacing-Margin-L, 92px) var(--Padding, 168px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Margin-M, 36px);
+    align-self: stretch;
+    background-color: #FFF;
+}
+
+.contact-section .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Margin-M, 36px);
+    align-self: stretch;
+    background-color: #FFF;
+    margin-top: 92px;
+    margin-bottom: 92px;
+    margin-left: 168px;
+    margin-right: 168px;
+}
+
+.contact-section .contact h2 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+}
+
+.contact-section .contact .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: var(--Spacing-Margin-S, 20px);
+}
+
+.contact-section .contact .contact-info .logo-frame {
+    display: flex;
+    width: 270px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.contact-section .contact .contact-info .logo-frame img {
+    width: 270px;
+    height: 91px;
+}
+
+.contact-section .contact .contact-info .frame {
+    display: flex;
+    width: 270px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    word-wrap: break-word; /* Ensure long words break to the next line */
+}
+
+.contact-section .contact .contact-info .frame h4 {
+    height: auto; /* Adjust height to fit content */
+    align-self: stretch;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    width: 100%;
+}
+
+.contact-section .contact .contact-info .frame p {
+    height: auto; /* Adjust height to fit content */
+    align-self: stretch;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    width: 100%;
+}
+
+.contact-section .contact .contact-info .frame p .bold {
+    height: auto; /* Adjust height to fit content */
+    align-self: stretch;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    width: 100%;
+}
+
+.teachers-section {
+    display: flex;
+    max-width: 100%;
+    padding: var(--Spacing-Margin-L, 92px) var(--Padding, 168px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Margin-M, 36px);
+    align-self: stretch;
+    background: var(--Hall, #F5F7FA);
+    height: auto; /* Adjust height to fit content */
+}
+
+.teachers-section .search-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end; /* Align to the right */
+    position: relative;
+}
+
+.teachers-section input {
+    display: flex;
+    width: 33%; /* Make the input one-third of its current size */
+    padding: 10px 40px 10px 10px; /* Add padding to the right for the icon */
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--Tume-hall, #8E99AB);
+    background: #FFF;
+}
+
+.teachers-section .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none; /* Make the icon unclickable */
+}
+
+.teacher-cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: var(--Spacing-Margin-S, 20px);
+    flex-wrap: wrap;
+}
+
+.teacher-card {
+    display: flex;
+    width: 355px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 16px;
+}
+
+.teacher-card .frame1 {
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    background: var(--Must, #000);
+}
+
+.teacher-card .frame1 .frame1-together {
+    display: flex;
+    width: auto; /* Adjust width to fit content */
+    align-items: center; /* Center align items vertically */
+    gap: 10px; /* Ensure consistent gap between image and text */
+    padding: 10px; /* Add padding to make the box tighter */
+}
+
+.teacher-card .frame1 img {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    padding: 0px; /* Remove padding to avoid affecting the image dimensions */
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 50%; /* Ensure the image is perfectly round */
+    object-fit: cover; /* Ensure the image fits within the dimensions */
+}
+
+.teacher-card .frame1 .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+}
+
+.teacher-card .frame1 .info h3 {
+    align-self: stretch;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+    text-align: left;
+}
+
+.teacher-card .frame1 .info p {
+    align-self: stretch;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    text-align: left;
+}
+
+.teacher-card .frame2 {
+    display: flex;
+    flex-direction: column; /* Ensure room and email are on different rows */
+    height: auto; /* Adjust height to fit content */
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start */
+    gap: 5px; /* Add gap between room and email */
+    align-self: stretch;
+    background: var(--Valge, #FFF);
+}
+
+.teacher-card img {
+    width: 64px; /* Ensure all images are 64x64 */
+    height: 64px; /* Ensure all images are 64x64 */
+    border-radius: 50%; /* Ensure the image is perfectly round */
+    object-fit: cover; /* Ensure the image fits within the dimensions */
+}
+
+.teacher-card .info {
+    display: flex;
+    flex-direction: column;
+}
