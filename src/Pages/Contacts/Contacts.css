@@ -1,25 +1,21 @@
 .contact-section {
     display: flex;
-    max-width: 100%;
-    padding: var(--Spacing-Margin-L, 92px) var(--Padding, 168px);
+    max-width: 1440px;
+    padding:92px 168px;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--Spacing-Margin-M, 36px);
+    gap: 36px;
     align-self: stretch;
-    background-color: #FFF;
 }
 
 .contact-section .contact {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--Spacing-Margin-M, 36px);
+    gap: 36px;
+    max-width: 1128px;
+    width: 100%;
     align-self: stretch;
-    background-color: #FFF;
-    margin-top: 92px;
-    margin-bottom: 92px;
-    margin-left: 168px;
-    margin-right: 168px;
 }
 
 .contact-section .contact h2 {
@@ -32,16 +28,18 @@
     text-align: left;
 }
 
-.contact-section .contact .contact-info {
+.contact-info-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
-    gap: var(--Spacing-Margin-S, 20px);
-    flex-direction: row; /* Ensure frames are aligned horizontally */
+    max-width: 1128px;
+    width: 100%;
+    max-height: 287px;
+    height: 100%;
 }
 
-.contact-section .contact .contact-info .logo-frame {
+.logo-section {
     display: flex;
     width: 270px;
     flex-direction: column;
@@ -51,58 +49,57 @@
     align-self: stretch;
 }
 
-.contact-section .contact .contact-info .logo-frame img {
-    width: 270px;
-    height: 91px;
-}
-
-.contact-section .contact .contact-info .frame {
+.contact-info-frame1 {
     display: flex;
-    width: 270px;
+    width: 265px;
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
-    word-wrap: break-word; /* Ensure long words break to the next line */
 }
 
-.contact-section .contact .contact-info .frame h4 {
-    height: auto; /* Adjust height to fit content */
-    align-self: stretch;
-    color: #000;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%; /* 25.2px */
-    word-wrap: break-word; /* Ensure long words break to the next line */
-    width: 100%;
-}
-
-.contact-section .contact .contact-info .frame p {
-    height: auto; /* Adjust height to fit content */
-    align-self: stretch;
-    color: #000;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 22.4px */
-    word-wrap: break-word; /* Ensure long words break to the next line */
-    width: 100%;
-}
-
-.contact-section .contact .contact-info .frame p .bold {
-    height: auto; /* Adjust height to fit content */
-    align-self: stretch;
+.contact-info-frame1 p,
+.contact-info-frame2 p,
+.contact-info-frame3 p {
     color: #000;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 140%;
-    word-wrap: break-word; /* Ensure long words break to the next line */
-    width: 100%;
+    font-weight: 400;
+    line-height: 140%; 
+    text-align: left;
 }
+
+.contact-info-frame1 h4,
+.contact-info-frame2 h4,
+.contact-info-frame3 h4 {
+    color: #000;;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+    text-align: left;
+}
+
+.contact-info-frame2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;  
+}
+
+.contact-info-frame3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px; 
+}
+
+
+
+
+
+
 
 .teachers-section {
     display: flex;
@@ -113,20 +110,20 @@
     gap: var(--Spacing-Margin-M, 36px);
     align-self: stretch;
     background: var(--Hall, #F5F7FA);
-    height: auto; /* Adjust height to fit content */
+    height: auto;
 }
 
 .teachers-section .search-container {
     display: flex;
     width: 100%;
-    justify-content: flex-end; /* Align to the right */
+    justify-content: flex-end;
     position: relative;
 }
 
 .teachers-section input {
     display: flex;
-    width: 33%; /* Make the input one-third of its current size */
-    padding: 10px 40px 10px 10px; /* Add padding to the right for the icon */
+    width: 33%;
+    padding: 10px 40px 10px 10px;
     justify-content: space-between;
     align-items: center;
     border: 1px solid var(--Tume-hall, #8E99AB);
@@ -140,7 +137,7 @@
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    pointer-events: none; /* Make the icon unclickable */
+    pointer-events: none;
 }
 
 .teacher-cards {
@@ -174,22 +171,22 @@
 
 .teacher-card .frame1 .frame1-together {
     display: flex;
-    width: auto; /* Adjust width to fit content */
-    align-items: center; /* Center align items vertically */
-    gap: 10px; /* Ensure consistent gap between image and text */
-    padding: 10px; /* Add padding to make the box tighter */
+    width: auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
 }
 
 .teacher-card .frame1 img {
     display: flex;
     width: 64px;
     height: 64px;
-    padding: 0px; /* Remove padding to avoid affecting the image dimensions */
+    padding: 0px;
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
-    border-radius: 50%; /* Ensure the image is perfectly round */
-    object-fit: cover; /* Ensure the image fits within the dimensions */
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .teacher-card .frame1 .info {
@@ -208,7 +205,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 28px */
+    line-height: 140%;
     text-align: left;
 }
 
@@ -219,27 +216,27 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
     text-align: left;
 }
 
 .teacher-card .frame2 {
     display: flex;
-    flex-direction: column; /* Ensure room and email are on different rows */
-    height: auto; /* Adjust height to fit content */
+    flex-direction: column;
+    height: auto;
     padding: 10px;
     justify-content: center;
-    align-items: flex-start; /* Align items to the start */
-    gap: 5px; /* Add gap between room and email */
+    align-items: flex-start;
+    gap: 5px;
     align-self: stretch;
     background: var(--Valge, #FFF);
 }
 
 .teacher-card img {
-    width: 64px; /* Ensure all images are 64x64 */
-    height: 64px; /* Ensure all images are 64x64 */
-    border-radius: 50%; /* Ensure the image is perfectly round */
-    object-fit: cover; /* Ensure the image fits within the dimensions */
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .teacher-card .info {

@@ -39,12 +39,12 @@ const TraineeshipsInfo = () => {
             <div className="praktika-koht-container">
                 <h1>Abistavad materjalid</h1>
             <div className="praktika-koht-buttons-container">
-                <button className="praktika-koht-button">DOCS-is vormistamise juhis</button>
-                <button className="praktika-koht-button">Praktika arvestamine</button>
-                <button className="praktika-koht-button">Praktikaaruande koostamise juhend</button>
-                <button className="praktika-koht-button">Praktilise töö ning praktika läbiviimise tingimused ja kord</button>
-                <button className="praktika-koht-button">Tööohutusalane ja -tervishoiu alane meelsepea</button>
-                <button className="praktika-koht-button">Voco kirjalike tööde juhend</button>
+                <button className="praktika-koht-button" onClick={() => window.location.href='https://kevinita22.ikt.khk.ee/IT-Akadeemia%20jaoks%20pdf-id/DOCS-is%20vormistamise%20juhis.pdf'}>DOCS-is vormistamise juhis</button>
+                <button className="praktika-koht-button" onClick={() => window.location.href='https://kevinita22.ikt.khk.ee/IT-Akadeemia%20jaoks%20pdf-id/Praktika%20arvestamine.pdf'}>Praktika arvestamine</button>
+                <button className="praktika-koht-button" onClick={() => window.location.href='https://kevinita22.ikt.khk.ee/IT-Akadeemia%20jaoks%20pdf-id/Praktikaaruande%20koostamise%20juhend.pdf'}>Praktikaaruande koostamise juhend</button>
+                <button className="praktika-koht-button" onClick={() => window.location.href='https://kevinita22.ikt.khk.ee/IT-Akadeemia%20jaoks%20pdf-id/Praktilise%20t%c3%b6%c3%b6%20ning%20praktika%20l%c3%a4biviimise%20tingimused%20ja%20kord.pdf'}>Praktilise töö ning praktika läbiviimise tingimused ja kord</button>
+                <button className="praktika-koht-button" onClick={() => window.location.href='https://kevinita22.ikt.khk.ee/IT-Akadeemia%20jaoks%20pdf-id/T%c3%96%c3%96OHUTUSALANE%20JA%20-TERVISHOIU%20ALANE%20MEELESPEA.pdf'}>Tööohutusalane ja -tervishoiu alane meelsepea</button>
+                <button className="praktika-koht-button" onClick={() => window.location.href='https://kevinita22.ikt.khk.ee/IT-Akadeemia%20jaoks%20pdf-id/VOCO%20kirjalike%20t%c3%b6%c3%b6de%20juhend.pdf'}>Voco kirjalike tööde juhend</button>
             </div>
         </div>
     </div>

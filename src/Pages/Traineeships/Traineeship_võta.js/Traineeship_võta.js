@@ -51,21 +51,21 @@ const TraineeshipsVõta = () => {
             <div className="traineeshipsvota-text-container">
                 <h2>VÕTAga seotud tingimused ja vajaminevad dokumendid ja vormid leiad siit:</h2>
                 <ul>
-                   <li>Tartu Rakendusliku Kolledži Õppekorralduseeskiri (PDF)</li>
-                   <li>VÕTA kord (PDF)</li>
-                   <li>VÕTA nõustajad (PDF)</li>
-                   <li>VÕTA komisjonid (PDF)</li>
-                   <li>Lisa 1, taotlus varasemate õpingute arvestamiseks (DOC)</li>
-                   <li>Lisa 2, taotlus varasemate töökogemuste arvestamiseks (DOC)</li>
-                   <li>Lisa 3, STARR vorm varasemate töökogemuste analüüsimiseks (DOC)</li>
+                   <li>Tartu Rakendusliku Kolledži Õppekorralduseeskiri (<a href="https://voco.ee/wp-content/uploads/Oppekorralduseeskiri-aug_2024.pdf">PDF</a>)</li>
+                   <li>VÕTA kord (<a href="https://voco.ee/wp-content/uploads/Lisa-2-VOTA-kord_290823.pdf">PDF</a>)</li>
+                   <li>VÕTA nõustajad (<a href="https://voco.ee/wp-content/uploads/VOTA-noustajad-2024-2025.pdf">PDF</a>)</li>
+                   <li>VÕTA komisjonid (<a href="https://voco.ee/wp-content/uploads/VOTA-komisjonid-2024-2025.pdf">PDF</a>)</li>
+                   <li>Lisa 1, taotlus varasemate õpingute arvestamiseks (<a href="https://voco.ee/wp-content/uploads/VOTA-lisa-1-Taotlus-varasemate-opingute-arvestamiseks-1.doc">DOC</a>)</li>
+                   <li>Lisa 2, taotlus varasemate töökogemuste arvestamiseks (<a href="https://voco.ee/wp-content/uploads/VOTA-lisa-2-Taotlus-varasemate-tookogemuste-arvestamiseks-1.doc">DOC</a>)</li>
+                   <li>Lisa 3, STARR vorm varasemate töökogemuste analüüsimiseks (<a href="https://voco.ee/wp-content/uploads/VOTA-lisa-3-STARR-vorm-varasematest-tookogemustest-opitu-analuusimiseks-1.doc">DOC</a>)</li>
                 </ul>
             </div>
             <div className="traineeshipsvota-text-container">
                 <h2>Iseseisvalt läbitavad õppematerjalid leiad siit:</h2>
                 <ul>
-                    <li>VÕTA hindajale</li>
-                    <li>VÕTA taotlejale</li>
-                    <li>VÕTA nõustajale</li>
+                    <li><a href="https://e-koolikott.ee/et/oppematerjal/31324-VOTA-hindajale">VÕTA hindajale</a></li>
+                    <li><a href="https://e-koolikott.ee/et/oppematerjal/31326-VOTA-taotlejale">VÕTA taotlejale</a></li>
+                    <li><a href="https://e-koolikott.ee/et/oppematerjal/31325-VOTA-noustajale">VÕTA nõustajale</a></li>
                 </ul>
             </div>
         </div>
