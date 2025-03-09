@@ -1,13 +1,24 @@
 .traineeshipsworldwide-container {
     display: flex;
+    flex: 2;
     flex-direction: column;
     align-items: flex-start;
     gap: 36px;
-    margin: 92px auto;
-    max-width: 829px;
+    max-width: 828px;
     width: 100%;
+    padding: 10px;
+}
+
+.traineeshipsworldwide-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1128px;
+    width: 100%;
+    margin: 92px auto;
+    align-items: flex-start;
+    gap: 5px;
     padding: 0 20px;
-    box-sizing: border-box;
 }
 
 .traineeshipsworldwide-container h1 {
@@ -123,4 +134,24 @@
 .traineeshipsworldwide-button2 a:hover {
     text-decoration: none;
     background: transparent;
+}
+
+.traineeshipsworldwide-image-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 275px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    align-self: stretch;
+}
+
+.Praktika-pilt1,
+.Praktika-pilt2,
+.Praktika-pilt3,
+.Praktika-pilt4 {
+    width: 240px;
+    height: 240px;
 }

@@ -1,9 +1,13 @@
 import React from 'react';
 import './Traineeship_worldwide.css';
+import PraktikaImage1 from '../../../assets/pictures/Praktika/Praktika1.png';
+import PraktikaImage2 from '../../../assets/pictures/Praktika/Praktika2.png';
+import PraktikaImage3 from '../../../assets/pictures/Praktika/Praktika3.png';
+import PraktikaImage4 from '../../../assets/pictures/Praktika/Praktika4.png';
 
 const TraineeshipsWorldwide = () => {
     return (
-        <div>
+        <div className="traineeshipsworldwide-page-container">
         <div className="traineeshipsworldwide-container">
             <h1>Praktika ja õppimine välismaal</h1>
             <div className="traineeshipsworldwide-text-container">
@@ -40,8 +44,14 @@ const TraineeshipsWorldwide = () => {
                     </a>
                 </div>  
             </div>
+            </div>
+            <div className="traineeshipsworldwide-image-container">
+            <img src={PraktikaImage1} alt="Praktika pilt1" className="Praktika-pilt1" />
+            <img src={PraktikaImage2} alt="Praktika pilt2" className="Praktika-pilt2" />
+            <img src={PraktikaImage3} alt="Praktika pilt3" className="Praktika-pilt3" />
+            <img src={PraktikaImage4} alt="Praktika pilt4" className="Praktika-pilt4" />
+            </div>
         </div>
-    </div>
     );
 };
 

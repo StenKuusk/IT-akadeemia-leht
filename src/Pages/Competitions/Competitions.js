@@ -3,8 +3,8 @@ import React from 'react';
 const Competitions = () => {
     return (
         <div>
-            <h1>Competitions Page</h1>
-            <p>Welcome to the competitions page. Stay tuned for upcoming events and challenges!</p>
+            <h1>Võistluste leht</h1>
+            <p>Tere tulemast võistluste lehele</p>
         </div>
     );
 };

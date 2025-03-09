@@ -71,7 +71,7 @@
 
   .privacy-info {
     width: 207px;
-    margin-bottom: 10px;
+    gap: 6px;
   }
   
   .contact-info h3,
@@ -112,10 +112,10 @@
       margin: 0;
       text-decoration: none;
       display: block;
-      margin-bottom: -10px;
   }
 
-  .contact-group a:hover {
+  .contact-info a:hover,
+  .privacy-info a:hover {
     color: #20C4F4; 
     text-decoration: underline; 
   }
@@ -126,7 +126,7 @@
   }
 
   .footer-text {
-    color: var(--Must, #000);
+    color: #000;
     text-align: center;
     font-family: Montserrat;
     font-size: 14px;

@@ -7,23 +7,25 @@ const Footer = () => {
     <footer className="footer">
         <div className="black-section">
             <div className="footer-content">
-                <div className="contact-group">
-                    <img src={logo} alt="Logo" className="footer-logo" />
+                <div className="footer-logo">
+                    <img src={logo} alt="Logo" />
                 </div>
-                <div className='contact-group contact-info'>
+                <div className='footer-info'>
+                 <div className='contact-info'>
                     <h3>Kontakt</h3>
                     <a href="mailto:info@voco.ee">info@voco.ee</a>
                     <p>7 361 810</p>
-                </div>
-                <div className='contact-group voco-info'>
+                 </div>
+                 <div className='voco-info'>
                     <h3>VOCO</h3>
                     <p>Kopli 1</p>
                     <p>Tartu 50115 Eesti</p>
-                </div>
-                <div className='contact-group privacy-info'>
+                 </div>
+                 <div className='privacy-info'>
                     <h3>Privaatsustingimused</h3>
                     <a href="https://voco.ee/andmekaitse-info/">Andmekaitse</a><br />
                     <a href="https://voco.ee/kupsised/">Küpsised</a>
+                 </div>
                 </div>
             </div>
         </div>
