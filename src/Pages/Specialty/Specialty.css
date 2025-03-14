@@ -3,25 +3,23 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    box-sizing: border-box; /* Add this line */
+    box-sizing: border-box; 
 }
 
 *, *::before, *::after {
-    box-sizing: inherit; /* Add this line */
+    box-sizing: inherit;
 }
 
 .erialad-container {
-    margin: auto;
-    background: white;
-    border-radius: 8px;
     display: flex;
-    max-width: 1540px;
-    width: 100%;
-    padding: 92px 20px; 
     flex-direction: column;
-    align-items: stretch;
-    gap: 36px;
-    overflow: hidden;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 92px auto;
+    max-width: 1128px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 } 
 
 .erialad-container h1, .filters, .erialad-list {
@@ -29,15 +27,15 @@ body {
 }
 
 .erialad-container h1 {
-    width: 100%; 
-    height: 32px;
-    color: #000;
+    color: black;
     font-family: Montserrat;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
     text-align: left;
+    width: 100%;
+    margin-left: 10px;
 }
 
 .filters {
@@ -45,7 +43,8 @@ body {
     align-items: center;
     gap: 20px;
     align-self: stretch;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 0px 10px;
 }
 
 .filters select, .filters button {
@@ -173,20 +172,17 @@ body {
 }
 
 .hero-section {
-    width: 80vw;
-    height: 45vh;
+    width: 1128px;
+    height: 282px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 0;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 500px;
     position: relative;
-    background: var(--Hall, #F5F7FA);
     overflow: hidden;
-    left: 50%;
     transform: translateX(-50%);
-    max-width: 100%; 
 }
 
 .hero-section img {
@@ -199,7 +195,7 @@ body {
 .hero-text {
     position: absolute;
     top: 20px;
-    left: 50%;
+    left: 55%;
     transform: translateX(-50%);
     color: #000;
     text-align: center;
