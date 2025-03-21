@@ -1,0 +1,150 @@
+.competition-container {
+    display: flex;
+    max-width: 1440px;
+    padding: var(--Spacing-Margin-L, 92px) 168px;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--Spacing-Margin-M, 36px);
+    align-self: stretch;
+}
+
+.competition-container h1 {
+    color: black;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+    width: 100%;
+}
+
+.competition-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--Spacing-Margin-S, 20px);
+    width: 100%;
+}
+
+.competition-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--Hall, #F5F7FA);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.competition-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.competition-card h2 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+}
+
+.competition-card p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.competition-card a {
+    display: flex;
+    width: 133px;
+    min-height: 33px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 2px;
+    border: 2px solid #000;
+    margin-top: 10px;
+}
+
+.competition-card a:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.pagination button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pagination button.active {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.pagination button:hover:not(.active) {
+    background-color: #f1f1f1;
+}
+
+.pagination button:not(.active) {
+    border: none;
+}
+
+.pagination button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+}
+
+.pagination button:hover::before {
+    left: 0;
+}
+
+.pagination .border-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+@keyframes borderMove {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: #000;
+    }
+}

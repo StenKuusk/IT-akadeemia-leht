@@ -3,23 +3,19 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 
 const baseUrl = 'https://voco.ee/uudised/page/';
-const maxPages = 1;
 const newsPerPage = 12;
 const corsProxy = 'https://api.allorigins.win/get?url=';
 
 const scrapeNews = async () => {
     try {
         const news = [];
-        const requests = [];
+        let page = 1;
+        let hasMoreNews = true;
 
-        for (let page = 1; page <= maxPages; page++) {
-            requests.push(axios.get(corsProxy + encodeURIComponent(`${baseUrl}${page}/`)));
-        }
-
-        const responses = await Promise.all(requests);
-        for (let i = 0; i < responses.length; i++) {
-            const { data } = responses[i];
-            console.log(`Data fetched from page ${i + 1}:`, data);
+        while (hasMoreNews) {
+            const url = corsProxy + encodeURIComponent(`${baseUrl}${page}/`);
+            const { data } = await axios.get(url);
+            console.log(`Data fetched from page ${page}:`, data);
             const $ = cheerio.load(data.contents);
 
             const pageNews = [];
@@ -40,13 +36,10 @@ const scrapeNews = async () => {
             });
 
             if (pageNews.length === 0) {
-                break;
-            }
-
-            news.push(...pageNews);
-
-            if (pageNews.length < newsPerPage) {
-                break;
+                hasMoreNews = false;
+            } else {
+                news.push(...pageNews);
+                page++;
             }
         }
 

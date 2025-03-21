@@ -14,12 +14,11 @@ const corsProxy = 'https://api.allorigins.win/get?url=';
 const fetchNews = async () => {
     const baseUrl = 'https://voco.ee/uudised/page/';
     const news = [];
-    const maxPages = 1;
     const newsPerPage = 12;
     let page = 1;
     let hasMoreNews = true;
 
-    while (hasMoreNews && page <= maxPages) {
+    while (hasMoreNews) {
         const url = corsProxy + encodeURIComponent(`${baseUrl}${page}/`);
         console.log(`Fetching data from: ${url}`);
         const { data } = await axios.get(url);
