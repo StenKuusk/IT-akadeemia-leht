@@ -41,10 +41,8 @@ const TraineeshipsVõta = () => {
             <div className="traineeshipsvota-text-container">
                 <h2>Kuidas käib VÕTA taotlemine?</h2>
                 <p>Enne VÕTA protsessi alustamist tuleb kindlasti tutvuda õppekavaga, millel õpid või asud õppima ja saada ülevaade õpingute sisust. Igal moodulil on õpiväljundid, mis õppe lõppedes saavutatakse. Kui oled nendega tutvunud ja tead, et Sinu varasemad teadmised ja oskused lubavad Sul antud väljundeid täita, siis saad esitada VÕTA taotluse.</p>
-                <br /><br />
                 <ul>
                    <li>Varasemate õpingute arvestamiseks on Sul vaja kindlasti sellekohast dokumenti (õpitulemuste tõend eelmisest koolist, lõputunnistus, väljavõte õppekavast). Tõendit on vaja ka täiendkoolitusest omandatud teadmiste ja oskuste ülekandmiseks</li>
-                <br /><br />
                    <li>Töökogemuse arvestamiseks on vajalik eneseanalüüs, mille käigus pead kirjeldama ja suutma tõestada, mida ja kuidas töötamise käigus õppisid. Seda on kõige kergem teha STARR vormi abil (link). Lisa taotlusele kõik olemasolevad dokumendid, mis tõestavad töötamist (tööleping, erinevad töötamise ajal läbitud täiendkoolitused jm).</li>
                 </ul>
            </div>

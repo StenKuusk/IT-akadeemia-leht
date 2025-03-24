@@ -17,7 +17,6 @@ const Contacts = () => {
                     name: `${teacher.firstname} ${teacher.lastname}`,
                     image: teacher.image || placeholderImage, 
                     info: teacher.job_title,
-                    phone: teacher.phone,
                     room: teacher.room ? teacher.room[0] : 'N/A',
                     email: teacher.email
                 }));
@@ -90,7 +89,6 @@ const Contacts = () => {
                             <div className="frame2">
                                 <p>Tööruum: {teacher.room}</p>
                                 <p>Email: {teacher.email}</p>
-                                <p>Telefon: {teacher.phone}</p>
                             </div>
                         </div>
                     ))}
