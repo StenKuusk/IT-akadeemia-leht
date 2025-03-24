@@ -7,11 +7,11 @@ const Competitions = () => {
     const [news, setNews] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [maxPages, setMaxPages] = useState(1);
+    const newsPerPage = 12;
 
     useEffect(() => {
         const fetchNews = async () => {
             try {
-                console.log('Fetching news data...');
                 const allNews = [];
                 const corsProxy = 'https://api.allorigins.win/get?url=';
                 let page = 1;
@@ -20,7 +20,6 @@ const Competitions = () => {
                 while (hasMoreNews) {
                     const url = corsProxy + encodeURIComponent(`https://voco.ee/category/opilasvoistlused/page/${page}/`);
                     const { data } = await axios.get(url);
-                    console.log(`Data fetched from page ${page}:`, data);
                     const $ = load(data.contents);
 
                     const pageNews = [];
@@ -48,9 +47,8 @@ const Competitions = () => {
                     }
                 }
 
-                console.log('Parsed news data:', allNews);
                 setNews(allNews);
-                setMaxPages(page - 1);
+                setMaxPages(Math.ceil(allNews.length / newsPerPage));
             } catch (error) {
                 console.error('Error fetching news data:', error);
             }
@@ -63,12 +61,98 @@ const Competitions = () => {
         setCurrentPage(page);
     };
 
-    const paginatedNews = news.slice((currentPage - 1) * 12, currentPage * 12);
+    const handlePrevPage = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1);
+        }
+    };
+
+    const handleNextPage = () => {
+        if (currentPage < maxPages) {
+            setCurrentPage(currentPage + 1);
+        }
+    };
+
+    const paginatedNews = news.slice((currentPage - 1) * newsPerPage, currentPage * newsPerPage);
 
     const rows = [];
     for (let i = 0; i < paginatedNews.length; i += 3) {
         rows.push(paginatedNews.slice(i, i + 3));
     }
+
+    const renderPagination = () => {
+        const pageNumbers = [];
+        const delta = 2;
+
+        pageNumbers.push(
+            <button
+                key="prev"
+                onClick={handlePrevPage}
+                className={currentPage === 1 ? 'disabled' : ''}
+                disabled={currentPage === 1}
+            >
+                ←
+            </button>
+        );
+
+        pageNumbers.push(
+            <button
+                key={1}
+                onClick={() => handlePageChange(1)}
+                className={currentPage === 1 ? 'active' : ''}
+            >
+                1
+            </button>
+        );
+
+        if (currentPage > delta + 2) {
+            pageNumbers.push(<span key="ellipsis-start">…</span>);
+        }
+
+        const startPage = Math.max(2, currentPage - delta);
+        const endPage = Math.min(maxPages - 1, currentPage + delta);
+
+        for (let i = startPage; i <= endPage; i++) {
+            pageNumbers.push(
+                <button
+                    key={i}
+                    onClick={() => handlePageChange(i)}
+                    className={currentPage === i ? 'active' : ''}
+                >
+                    {i}
+                </button>
+            );
+        }
+
+        if (currentPage < maxPages - delta - 1) {
+            pageNumbers.push(<span key="ellipsis-end">…</span>);
+        }
+
+        if (maxPages > 1) {
+            pageNumbers.push(
+                <button
+                    key={maxPages}
+                    onClick={() => handlePageChange(maxPages)}
+                    className={currentPage === maxPages ? 'active' : ''}
+                >
+                    {maxPages}
+                </button>
+            );
+        }
+
+        pageNumbers.push(
+            <button
+                key="next"
+                onClick={handleNextPage}
+                className={currentPage === maxPages ? 'disabled' : ''}
+                disabled={currentPage === maxPages}
+            >
+                →
+            </button>
+        );
+
+        return pageNumbers;
+    };
 
     return (
         <div className="competition-container">
@@ -89,17 +173,7 @@ const Competitions = () => {
                             ))}
                         </div>
                     ))}
-                    <div className="pagination">
-                        {Array.from({ length: maxPages }, (_, index) => (
-                            <button
-                                key={index + 1}
-                                className={currentPage === index + 1 ? 'active' : ''}
-                                onClick={() => handlePageChange(index + 1)}
-                            >
-                                {index + 1}
-                            </button>
-                        ))}
-                    </div>
+                    <div className="pagination">{renderPagination()}</div>
                 </>
             )}
         </div>

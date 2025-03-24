@@ -12,6 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <div className="navbar-content">
       <div className="navbar-logo">
         <Link to="/homepage">
           <img src={logo} alt="logo" />
@@ -27,7 +28,6 @@ const Navbar = () => {
               <li><Link to="/traineeships/info">Praktika üldinfo</Link></li>
               <li><Link to="/traineeships/worldwide">Praktika välismaal</Link></li>
               <li><Link to="/traineeships/võta">Praktika VÕTA-ga</Link></li>
-              <li><Link to="/traineeships/offers">Praktikapakkumised</Link></li>
             </ul>
           )}
         </li>
@@ -35,6 +35,7 @@ const Navbar = () => {
         <li><Link to="/competitions">Võistlused</Link></li>
         <li><Link to="/contacts">Kontaktid</Link></li>
       </ul>
+      </div>
     </nav>
   );
 };

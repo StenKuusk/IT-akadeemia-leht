@@ -30,7 +30,7 @@ const TraineeshipsInfo = () => {
                 <div className="praktika-buttons-container">
                     <button className="praktika-button">Praktikakoha taotlusleht</button>
                     <button className="praktika-button">Praktikaleping</button>
-                    <button className="praktika-button">Praktikapäevik</button>
+                    <button className="praktika-button" onClick={() => window.location.href='https://kevinita22.ikt.khk.ee/IT-Akadeemia%20jaoks%20pdf-id/Praktikap%c3%a4evik.pdf'}>PraktikaPäevik</button>
                     <button className="praktika-button">Hindamisvorm</button>
                     <button className="praktika-button">Praktikaaruanne</button>
                 </div>              

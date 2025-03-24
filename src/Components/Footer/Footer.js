@@ -23,7 +23,7 @@ const Footer = () => {
                  </div>
                  <div className='privacy-info'>
                     <h3>Privaatsustingimused</h3>
-                    <a href="https://voco.ee/andmekaitse-info/">Andmekaitse</a><br />
+                    <a href="https://voco.ee/andmekaitse-info/">Andmekaitse</a>
                     <a href="https://voco.ee/kupsised/">Küpsised</a>
                  </div>
                 </div>
